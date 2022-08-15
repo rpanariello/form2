@@ -3,6 +3,9 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script1.js"></script>
+
     <title>Contact Us</title>
 </head>
 <body>
@@ -16,7 +19,7 @@
     </div>
     <div class="full_form">
         <div class="user_info">
-            <form>
+            <form class="user_form">
                 <label for="fname">First Name:</label>
                 <input type="text" id="fname" name="fname" required>
                 <br>
@@ -28,9 +31,14 @@
                 <br>
                 <textarea wrap="hard" placeholder="Leave a message..."></textarea>
                 <br>
-                <input type="submit" value="Submit"> 
+                <input onclick="showValue();" type="button" value="Submit"><br>
+                <div class="answers">
+                    <div id="ans"></div>
+                    <div id="ans1"></div>
+                    <div id="ans2"></div>
+                </div><br>    
             </form>
-        </div>
+        </div>    
         <div class="company_info">
           <section class="contact_details">
             <div>
@@ -68,12 +76,12 @@
             </div>
           </section>  
         </div>
-    </div>   
+    </div>
+    <footer>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+    </footer>      
 </body>
-<footer>
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-twitter"></a>
-    <a href="#" class="fa fa-instagram"></a>
-    <a href="#" class="fa fa-linkedin"></a>
-</footer>
 </html>
